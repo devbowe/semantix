@@ -1,0 +1,64 @@
+.financial {
+    padding-block: var(--spacing);
+    background-color: var(--clr-gray-light);
+
+    &__container {
+        h2 {
+            max-width: 31ch;
+            margin-bottom: 1.125rem;
+        }
+
+        > p {
+            max-width: 67ch;
+            margin-inline: auto;
+            text-align: center;
+            color: var(--clr-gray-medium);
+        }
+
+        ul {
+            margin-block: 3rem;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(2.5rem, 3.5vw, 4rem);
+
+            @media (min-width: 30em) {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: max-content;
+                margin-inline: auto;
+            }
+
+            @media (min-width: 70em) {
+                grid-template-columns: repeat(4, 1fr);
+                margin-block: 4rem;
+            }
+
+            li {
+                color: var(--clr-blue-dark);
+                display: grid;
+                grid-template-rows: min-content max-content 1fr;
+                justify-items: center;
+                text-align: center;
+
+                h3 {
+                    line-height: 1.2;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    margin-block: 0.75rem;
+                }
+
+                p {
+                    text-align: center;
+                    max-width: 30ch;
+                    margin-inline: auto;
+                }
+            }
+        }
+
+        a {
+            margin-inline: auto;
+            display: grid;
+            max-width: max-content;
+        }
+    }
+}

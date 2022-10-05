@@ -1,0 +1,87 @@
+.ia {
+    padding-block: var(--spacing);
+    background-color: var(--clr-gray-light);
+
+    &__container {
+        h2 {
+            max-width: 40ch;
+        }
+
+        .gridish {
+            padding-top: calc(1vw + 3rem);
+            display: grid;
+            gap: 2rem;
+
+            .ia__card {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                color: var(--clr-white);
+                padding: 1.25rem;
+                border-radius: 20px;
+                overflow: hidden;
+                min-height: 20rem;
+
+                display: grid;
+
+                main {
+                    align-self: end;
+                    display: grid;
+                    gap: 1rem;
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        max-width: 25ch;
+                    }
+
+                    a {
+                        max-width: max-content;
+                    }
+                }
+            }
+
+            @media (min-width: 45em) {
+                grid-template-areas:
+                    "card01 card02"
+                    "card01 card03";
+
+                @for $ind from 1 to 4 {
+                    .card0#{$ind} {
+                        grid-area: card0#{$ind};
+                    }
+                }
+
+                .ia__card {
+                    padding: 2rem;
+                    min-height: 15rem;
+
+                    h3 {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .card01,
+    .card02,
+    .card03 {
+        background-color: var(--clr-blue-light);
+    }
+
+    .card01 {
+        background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-card-varejo.png");
+    }
+
+    .card02 {
+        background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-card-finan.png");
+    }
+
+    .card03 {
+        background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-card-hospital.png");
+    }
+}

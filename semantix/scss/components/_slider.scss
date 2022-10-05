@@ -1,0 +1,112 @@
+.slider-card {
+    --padding: 1.5rem;
+
+    cursor: grab;
+
+    background-color: var(--clr-blue-dark);
+    color: var(--clr-white);
+    border-radius: 20px;
+    padding: var(--padding);
+
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    gap: 1rem;
+    height: auto;
+
+    h3 {
+        margin-bottom: 0.75rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    p {
+        font-size: 1rem;
+        color: var(--clr-white);
+    }
+
+    &.light {
+        background-color: var(--clr-blue-light);
+    }
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
+.custom-slider-section {
+    padding-block: var(--spacing);
+    position: relative;
+
+    .container {
+        .banner {
+            display: none;
+        }
+
+        .content {
+            h2 {
+                max-width: 19ch;
+
+                &.large {
+                    max-width: 32ch;
+                }
+            }
+
+            > p {
+                color: var(--clr-gray-medium);
+                max-width: 45ch;
+                padding-block: 1.5rem;
+            }
+
+            a {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    @media (min-width: 45em) {
+        padding-block: 0;
+
+        .container {
+            display: flex;
+
+            .image {
+                background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-multiply-img.png");
+                background-size: cover;
+                background-position: center;
+                width: 35%;
+                position: relative;
+                margin-left: 0%;
+
+                @media (min-width: 80em) {
+                    width: 30%;
+                }
+
+                &.second {
+                    background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-optimize-img.png");
+                }
+            }
+
+            .content {
+                padding-block: var(--spacing);
+                max-width: 60%;
+                margin-left: auto;
+
+                @media (min-width: 80em) {
+                    max-width: 65%;
+                }
+            }
+
+            .swiper-slide {
+                width: 80%;
+
+                @media (min-width: 70em) {
+                    width: 55%;
+                }
+
+                @media (min-width: 85em) {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

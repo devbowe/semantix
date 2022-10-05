@@ -1,0 +1,94 @@
+form {
+    --b-radius: 10px;
+
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 2rem;
+    background-color: var(--clr-blue-dark);
+
+    @media (min-width: 45em) {
+        grid-template-columns: 1fr 1fr;
+
+        .span-2 {
+            grid-column: span 2;
+        }
+    }
+
+    .field-wrapper {
+        border: 2px solid var(--clr-purple);
+        width: 100%;
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: var(--b-radius);
+
+        input:not([type="checkbox"]),
+        select {
+            background: none;
+            color: var(--clr-white);
+            width: 100%;
+            min-height: 40px;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_arrow-down.svg");
+            background-position-x: 99.9%;
+            background-position-y: 12px;
+            background-repeat: no-repeat;
+
+            &::-ms-expand {
+                display: none;
+            }
+
+            option {
+                color: var(--clr-black);
+                background-color: var(--clr-white);
+            }
+        }
+
+        label {
+            position: absolute;
+            top: -0.75rem;
+            padding-inline: 5px;
+            font-weight: 300;
+            background-color: var(--clr-blue-dark);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            left: 1rem;
+
+            @media (max-width: 400px) {
+                font-size: 0.8rem;
+                font-weight: 300;
+                top: -0.65rem;
+            }
+        }
+    }
+
+    button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        background-color: var(--clr-blue-light);
+        color: var(--clr-white);
+        padding: 0.75em 0.5em;
+        border-radius: var(--b-radius);
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        transition: background-color 250ms linear;
+
+        &:hover,
+        &:focus {
+            background-color: var(--clr-purple);
+        }
+    }
+}

@@ -1,0 +1,1562 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WTR8RXX");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description"
+        content="Com Semantix, seu negócio se destaca no mercado a partir de automações e decisões baseadas em dados." />
+
+    <meta property="og:description"
+        content="Com Semantix seu negócio se destaca no mercado a partir de automações e decisões baseadas em dados." />
+    <meta property="og:title" content="Semantix" />
+    <meta property="og:image" content="" />
+
+    <!-- Title -->
+    <title>Semantix</title>
+
+    <!-- Favicon -->
+    <link href="https://uploads-ssl.webflow.com/620d46c6d77bb82d692b9e39/622136eee95bd95cc7ecc436_fav_semantix1.png"
+        rel="shortcut icon" type="image/x-icon" />
+    <link href="https://uploads-ssl.webflow.com/620d46c6d77bb82d692b9e39/622136f4197fa38b90b48f85_webclip_semantix.png"
+        rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+        }
+
+        body {
+            min-height: 100vh;
+            text-rendering: optimizeSpeed;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        :root {
+            --spacing: 4rem;
+            --ff-general: "Montserrat", sans-serif;
+            --ff-title: "Space Grotesk", sans-serif;
+            --clr-green: #72c593;
+            --clr-purple: #9e7cff;
+            --clr-blue-light: #00abe6;
+            --clr-blue-dark: #0d0c54;
+            --clr-white: #ffffff;
+            --clr-gray-light: #f9f9f9;
+            --clr-gray-medium: #828282;
+            --clr-black: #0c0c0c;
+        }
+
+        @media (min-width: 45em) {
+            :root {
+                --spacing: 4.5rem;
+            }
+        }
+
+        @media (min-width: 70em) {
+            :root {
+                --spacing: 5.25rem;
+            }
+        }
+
+        * {
+            font-family: var(--ff-general);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--ff-title);
+        }
+
+        html {
+            font-size: 93.75%;
+        }
+
+        @media (min-width: 45em) {
+            html {
+                font-size: 100%;
+            }
+        }
+
+        ::selection {
+            background-color: var(--clr-purple);
+            color: var(--clr-white);
+        }
+
+        .container {
+            width: min(90%, 88.375em);
+            margin-inline: auto;
+        }
+
+        .custom-spam {
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.3;
+            letter-spacing: 0.6em;
+            color: var(--clr-green);
+            display: block;
+            margin-bottom: 1.15rem;
+        }
+
+        .custom-spam.center {
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: var(--clr-blue-dark);
+            font-size: clamp(1.75rem, 3.5vw, 2rem);
+            line-height: 1.25;
+        }
+
+        .section-title.center {
+            text-align: center;
+            margin-inline: auto;
+        }
+
+        .section-title.decoration {
+            position: relative;
+        }
+
+        .section-title.decoration::before {
+            content: "";
+            background-color: var(--clr-green);
+            width: 7.5rem;
+            height: 7px;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title.decoration--blue::before {
+            background-color: var(--clr-blue-light);
+        }
+
+        .section-title.center.decoration::before {
+            margin-inline: auto;
+        }
+
+        .btn {
+            background: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            background-color: var(--clr-purple);
+            color: var(--clr-white);
+            padding: 0.5rem 1rem;
+            border-radius: 100vmax;
+            min-width: 12rem;
+            display: inline-block;
+            text-align: center;
+            transition: all 300ms ease;
+            text-transform: uppercase;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            filter: brightness(0.8);
+        }
+
+        .btn--outlined {
+            background-color: rgba(0, 0, 0, 0);
+            color: var(--clr-white);
+            border: 1px solid var(--clr-white);
+        }
+
+        .btn--outlined:hover,
+        .btn--outlined:focus {
+            background-color: var(--clr-purple);
+            border-color: var(--clr-purple);
+            filter: unset;
+        }
+
+        .swal2-confirm.swal2-styled {
+            background-color: var(--clr-blue-light);
+        }
+
+        .swal2-icon-content {
+            color: #f08080;
+        }
+
+        .swal2-icon.swal2-warning {
+            border-color: #f08080;
+        }
+
+        .slider-card {
+            --padding: 1.5rem;
+            cursor: grab;
+            background-color: var(--clr-blue-dark);
+            color: var(--clr-white);
+            border-radius: 20px;
+            padding: var(--padding);
+            display: grid;
+            grid-template-rows: min-content min-content min-content;
+            gap: 1rem;
+            height: auto;
+        }
+
+        .slider-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .slider-card p {
+            font-size: 1rem;
+            color: var(--clr-white);
+        }
+
+        .slider-card.light {
+            background-color: var(--clr-blue-light);
+        }
+
+        .swiper-slide {
+            width: 80%;
+        }
+
+        .custom-slider-section {
+            padding-block: var(--spacing);
+            position: relative;
+        }
+
+        .custom-slider-section .container .banner {
+            display: none;
+        }
+
+        .custom-slider-section .container .content h2 {
+            max-width: 19ch;
+        }
+
+        .custom-slider-section .container .content h2.large {
+            max-width: 32ch;
+        }
+
+        .custom-slider-section .container .content>p {
+            color: var(--clr-gray-medium);
+            max-width: 45ch;
+            padding-block: 1.5rem;
+        }
+
+        .custom-slider-section .container .content a {
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 45em) {
+            .custom-slider-section {
+                padding-block: 0;
+            }
+
+            .custom-slider-section .container {
+                display: flex;
+            }
+
+            .custom-slider-section .container .image {
+                background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-multiply-img.png");
+                background-size: cover;
+                background-position: center;
+                width: 35%;
+                position: relative;
+                margin-left: 0%;
+            }
+        }
+
+        @media (min-width: 45em) and (min-width: 80em) {
+            .custom-slider-section .container .image {
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 45em) {
+            .custom-slider-section .container .image.second {
+                background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-optimize-img.png");
+            }
+        }
+
+        @media (min-width: 45em) {
+            .custom-slider-section .container .content {
+                padding-block: var(--spacing);
+                max-width: 60%;
+                margin-left: auto;
+            }
+        }
+
+        @media (min-width: 45em) and (min-width: 80em) {
+            .custom-slider-section .container .content {
+                max-width: 65%;
+            }
+        }
+
+        @media (min-width: 45em) {
+            .custom-slider-section .container .swiper-slide {
+                width: 80%;
+            }
+        }
+
+        @media (min-width: 45em) and (min-width: 70em) {
+            .custom-slider-section .container .swiper-slide {
+                width: 55%;
+            }
+        }
+
+        @media (min-width: 45em) and (min-width: 85em) {
+            .custom-slider-section .container .swiper-slide {
+                width: 40%;
+            }
+        }
+
+        form {
+            --b-radius: 10px;
+            display: grid;
+            gap: 1.25rem;
+            margin-top: 2rem;
+            background-color: var(--clr-blue-dark);
+        }
+
+        @media (min-width: 45em) {
+            form {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            form .span-2 {
+                grid-column: span 2;
+            }
+        }
+
+        form .field-wrapper {
+            border: 2px solid var(--clr-purple);
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: var(--b-radius);
+        }
+
+        form .field-wrapper input:not([type="checkbox"]),
+        form .field-wrapper select {
+            background: none;
+            color: var(--clr-white);
+            width: 100%;
+            min-height: 40px;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+        }
+
+        form .field-wrapper select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_arrow-down.svg");
+            background-position-x: 99.9%;
+            background-position-y: 12px;
+            background-repeat: no-repeat;
+        }
+
+        form .field-wrapper select::-ms-expand {
+            display: none;
+        }
+
+        form .field-wrapper select option {
+            color: var(--clr-black);
+            background-color: var(--clr-white);
+        }
+
+        form .field-wrapper label {
+            position: absolute;
+            top: -0.75rem;
+            padding-inline: 5px;
+            font-weight: 300;
+            background-color: var(--clr-blue-dark);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            left: 1rem;
+        }
+
+        @media (max-width: 400px) {
+            form .field-wrapper label {
+                font-size: 0.8rem;
+                font-weight: 300;
+                top: -0.65rem;
+            }
+        }
+
+        form button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            background-color: var(--clr-blue-light);
+            color: var(--clr-white);
+            padding: 0.75em 0.5em;
+            border-radius: var(--b-radius);
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            transition: background-color 250ms linear;
+        }
+
+        form button:hover,
+        form button:focus {
+            background-color: var(--clr-purple);
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.75em;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--clr-purple);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--clr-white);
+            border: 2px solid var(--clr-purple);
+            border-radius: 10px;
+        }
+
+        .hero {
+            background-color: var(--clr-blue-dark);
+            color: var(--clr-white);
+            padding-block: var(--spacing);
+            display: grid;
+            position: relative;
+        }
+
+        @media (min-width: 600px) {
+            .hero::after {
+                content: "";
+                position: absolute;
+                inset: 0 0 0 0;
+                background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-hero-mobile.svg");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: top right;
+                display: block;
+                z-index: 0;
+            }
+        }
+
+        @media (min-width: 600px) and (min-width: 1000px) {
+            .hero::after {
+                background-size: 80%;
+            }
+        }
+
+        @media (min-width: 600px) {
+            .hero__container {
+                z-index: 4;
+            }
+        }
+
+        .hero .content {
+            z-index: 9999;
+        }
+
+        .hero .content>img {
+            margin-bottom: clamp(3.5rem, 3.5vw, 6rem);
+        }
+
+        .hero .content h1 {
+            max-width: 25ch;
+            line-height: 1.2;
+            font-size: clamp(2rem, 3.5vw, 2.5rem);
+            margin-bottom: 1.75rem;
+        }
+
+        .hero .content h1 strong {
+            color: var(--clr-green);
+        }
+
+        .hero .content p {
+            font-size: 1.125rem;
+            max-width: 45ch;
+            margin-bottom: 3rem;
+        }
+
+        .hero .banner {
+            display: none;
+        }
+
+        @media (min-width: 1250px) {
+            .hero {
+                background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-hero-banner.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+                background-position-x: 110%;
+            }
+
+            .hero::after {
+                display: none;
+            }
+
+            .hero__container {
+                display: grid;
+                grid-template-columns: 1.25fr 1fr;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .hero {
+                background-position-x: 100%;
+            }
+        }
+
+        @media (min-width: 1700px) {
+            .hero {
+                background-position-x: 90%;
+            }
+        }
+
+        @media (min-width: 2000px) {
+            .hero {
+                background-position-x: 76%;
+            }
+        }
+
+        .ia {
+            padding-block: var(--spacing);
+            background-color: var(--clr-gray-light);
+        }
+
+        .ia__container h2 {
+            max-width: 40ch;
+        }
+
+        .ia__container .gridish {
+            padding-top: calc(1vw + 3rem);
+            display: grid;
+            gap: 2rem;
+        }
+
+        .ia__container .gridish .ia__card {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: var(--clr-white);
+            padding: 1.25rem;
+            border-radius: 20px;
+            overflow: hidden;
+            min-height: 20rem;
+            display: grid;
+        }
+
+        .ia__container .gridish .ia__card main {
+            align-self: end;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .ia__container .gridish .ia__card main h3 {
+            font-size: 1.5rem;
+        }
+
+        .ia__container .gridish .ia__card main p {
+            max-width: 25ch;
+        }
+
+        .ia__container .gridish .ia__card main a {
+            max-width: max-content;
+        }
+
+        @media (min-width: 45em) {
+            .ia__container .gridish {
+                grid-template-areas: "card01 card02""card01 card03";
+            }
+
+            .ia__container .gridish .card01 {
+                grid-area: card01;
+            }
+
+            .ia__container .gridish .card02 {
+                grid-area: card02;
+            }
+
+            .ia__container .gridish .card03 {
+                grid-area: card03;
+            }
+
+            .ia__container .gridish .ia__card {
+                padding: 2rem;
+                min-height: 15rem;
+            }
+
+            .ia__container .gridish .ia__card h3 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .ia .card01,
+        .ia .card02,
+        .ia .card03 {
+            background-color: var(--clr-blue-light);
+        }
+
+        .ia .card01 {
+            background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-card-varejo.png");
+        }
+
+        .ia .card02 {
+            background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-card-finan.png");
+        }
+
+        .ia .card03 {
+            background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-card-hospital.png");
+        }
+
+        .financial {
+            padding-block: var(--spacing);
+            background-color: var(--clr-gray-light);
+        }
+
+        .financial__container h2 {
+            max-width: 31ch;
+            margin-bottom: 1.125rem;
+        }
+
+        .financial__container>p {
+            max-width: 67ch;
+            margin-inline: auto;
+            text-align: center;
+            color: var(--clr-gray-medium);
+        }
+
+        .financial__container ul {
+            margin-block: 3rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(2.5rem, 3.5vw, 4rem);
+        }
+
+        @media (min-width: 30em) {
+            .financial__container ul {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: max-content;
+                margin-inline: auto;
+            }
+        }
+
+        @media (min-width: 70em) {
+            .financial__container ul {
+                grid-template-columns: repeat(4, 1fr);
+                margin-block: 4rem;
+            }
+        }
+
+        .financial__container ul li {
+            color: var(--clr-blue-dark);
+            display: grid;
+            grid-template-rows: min-content max-content 1fr;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .financial__container ul li h3 {
+            line-height: 1.2;
+            font-size: 1.25rem;
+            text-align: center;
+            margin-block: 0.75rem;
+        }
+
+        .financial__container ul li p {
+            text-align: center;
+            max-width: 30ch;
+            margin-inline: auto;
+        }
+
+        .financial__container a {
+            margin-inline: auto;
+            display: grid;
+            max-width: max-content;
+        }
+
+        .revo {
+            padding-block: var(--spacing);
+            background-color: var(--clr-blue-dark);
+            color: var(--clr-white);
+        }
+
+        .revo__container {
+            display: grid;
+            gap: 3rem;
+            z-index: 999;
+        }
+
+        @media (min-width: 45em) {
+            .revo__container {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        .revo__container h2 {
+            color: var(--clr-white);
+            max-width: 21ch;
+            max-width: 11ch;
+            font-size: 2rem;
+        }
+
+        .revo__container h2 strong {
+            color: var(--clr-green);
+        }
+
+        @media (min-width: 45em) {
+            .revo__container h2 {
+                font-size: 2.25rem;
+            }
+        }
+
+        @media (min-width: 70em) {
+            .revo__container h2 {
+                font-size: 2.5rem;
+                max-width: 21ch;
+            }
+        }
+
+        .revo__container p {
+            margin-block: 2rem;
+            max-width: 32ch;
+            font-size: 1.125rem;
+        }
+
+        .revo__container a {
+            padding-inline: 2rem;
+        }
+
+        @media (min-width: 45em) {
+            .revo {
+                position: relative;
+                display: grid;
+                background-color: var(--clr-white);
+            }
+
+            .revo::after {
+                content: "";
+                background-color: var(--clr-blue-dark);
+                inset: 0 0 0 0;
+                right: 40%;
+                position: absolute;
+                z-index: 0;
+            }
+        }
+
+        .footer {
+            background-color: var(--clr-black);
+        }
+
+        .footer__container {
+            display: grid;
+            place-items: center;
+            font-size: 0.85rem;
+            color: var(--clr-white);
+            padding-block: 1.25rem;
+        }
+
+        .tkp {
+            background-color: var(--clr-blue-dark);
+            color: var(--clr-white);
+            padding-block: var(--spacing);
+            display: grid;
+            position: relative;
+            min-height: 100vh;
+            background-image: linear-gradient(-135deg,
+                    var(--clr-purple) -50%,
+                    var(--clr-blue-dark));
+        }
+
+        .tkp .content {
+            z-index: 9999;
+        }
+
+        .tkp .content>img {
+            margin-bottom: clamp(3.5rem, 3.5vw, 6rem);
+        }
+
+        .tkp .content h1 {
+            max-width: 25ch;
+            line-height: 1.2;
+            font-size: clamp(2rem, 3.5vw, 2.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .tkp .content h1 strong {
+            color: var(--clr-blue-light);
+        }
+
+        .tkp .content>div {
+            margin-block: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .tkp .content>div span {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .tkp .content p {
+            font-size: 1.125rem;
+            max-width: 45ch;
+        }
+
+        .tkp .content a {
+            margin-top: 3rem;
+            padding-inline: 3rem;
+        }
+
+        @media (min-width: 1250px) {
+            .tkp {
+                background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-hero-banner.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+                background-position-x: 100%;
+            }
+
+            .tkp::after {
+                display: none;
+            }
+
+            .tkp__container {
+                display: grid;
+                grid-template-columns: 1.25fr 1fr;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .tkp {
+                background-position-x: 75%;
+            }
+        }
+
+        @media (min-width: 2000px) {
+            .tkp {
+                background-position-x: 68%;
+            }
+        }
+
+        /*# sourceMappingURL=style.css.map */
+    </style>
+
+    {{standard_header_includes}}
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTR8RXX" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <section class="hero" id="hero">
+        <div class="container hero__container">
+            <div class="content">
+                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-logo.svg"
+                    alt="Semantix Logo" />
+
+                <h1>
+                    <strong>Big Data:</strong> a precisão dos dados para
+                    impulsionar sua empresa
+                </h1>
+
+                <p>
+                    Com a Semantix, você conta com as principais tendências
+                    tecnológicas para transformar o seu negócio.
+                </p>
+
+                <form id="bw-form-sdp" name="bw-form-sdp" method="get"
+                    action="https://marketing.semantix.ai/semantix-obrigado">
+                    <div class="field-wrapper">
+                        <label for="firstname">Nome</label>
+                        <input type="text" id="firstname" name="firstname" />
+                        <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-input_name.svg"
+                            aria-hidden="true" alt="" />
+                    </div>
+
+                    <div class="field-wrapper">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" />
+                        <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-input_email.svg"
+                            aria-hidden="true" alt="" />
+                    </div>
+
+                    <div class="field-wrapper">
+                        <input type="text" id="phone" name="phone" />
+                        <label for="phone">Telefone</label>
+                        <img
+                            src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix-sdp--phonme.svg"
+                            aria-hidden="true"
+                            alt=""
+                        />
+                    </div>
+
+                    <div class="field-wrapper">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company" />
+                        <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-input_company.svg"
+                            aria-hidden="true" alt="" />
+                    </div>
+
+                    <div class="field-wrapper">
+                        <select type="text" id="jobtitle"
+                        name="jobtitle">
+                            <option value=""></option>
+                            <option value="Diretor/Gerente">Diretor/Gerente</option>
+                            <option value="Head">Head</option>
+                            <option value="Coordenador/Líder">Coordenador/Líder</option>
+                            <option value="Analista">Analista</option>
+                            <option value="Estagiário">Estagiário</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <label for="cargo">Cargo</label>
+                    </div>
+                    <div class="field-wrapper">
+                        <select type="number" id="numero_funcionarios_empresa_bw"
+                            name="numero_funcionarios_empresa_bw">
+                            <option value=""></option>
+                            <option value="1-200">1-200</option>
+                            <option value="200-500">200-500</option>
+                            <option value="500-1000">500-1000</option>
+                            <option value="Acima de 1000">
+                                Acima de 1000
+                            </option>
+                        </select>
+                        <label for="numero_funcionarios_empresa_bw">Nº de funcionários</label>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <label for="regiao___dropdown">Região</label>
+                        <select name="regiao___dropdown" id="country">
+                            <option value=""></option>
+                            <option value="Norte">Norte</option>
+                            <option value="Nordeste">Nordeste</option>
+                            <option value="Centro-Oeste">Centro-Oeste</option>
+                            <option value="Sudeste">Sudeste</option>
+                            <option value="Sul">Sul</option>
+                        </select>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <label for="segment">Segmento</label>
+                        <select name="segment" id="segment">
+                            <option value=""></option>
+                            <option value="Financeiro">Financeiro</option>
+                            <option value="Telecom">Telecom</option>
+                            <option value="Educação">Educação</option>
+                            <option value="Varejo">Varejo</option>
+                            <option value="Bancos">Bancos</option>
+                            <option value="TI">TI</option>
+                            <option value="Logística e suprimentos">Logística e suprimentos</option>
+                            <option value="Alimentos e bebidas">Alimentos e bebidas</option>
+                            <option value="Indústria - Cosméticos">Indústria - Cosméticos</option>
+                            <option value="Indústria - Automotiva">Indústria - Automotiva</option>
+                            <option value="Indústria - Farmacêutica">Indústria - Farmacêutica</option>
+                            <option value="Indústria - Outras">Indústria - Outras</option>
+                            <option value="Setor Público">Setor Público</option>
+                            <option value="Saúde">Saúde</option>
+                            <option value="Atacado">Atacado</option>
+                            <option value="Indústria de Bens de Consumo">Indústria de Bens de Consumo</option>
+                            <option value="Indústria de Bens de Produção">Indústria de Bens de Produção</option>
+                            <option value="Indústria de Construção">Indústria de Construção</option>
+                            <option value="Indústria de Energia">Indústria de Energia</option>
+                            <option value="Papel e Celulose">Papel e Celulose</option>
+                            <option value="Produtos de Agropecuária">Produtos de Agropecuária</option>
+                            <option value="Química e Petroquímica">Química e Petroquímica</option>
+                            <option value="Agrobusiness">Agrobusiness</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="field-wrapper span-2">
+                        <select type="text" id="principal_objetivo" name="principal_objetivo">
+                            <option value=""></option>
+                            <option value="Construir um sistema de dados/ter uma plataforma">
+                                Construir um sistema de dados/ter uma plataforma
+                            </option>
+                            <option value="Melhorar/otimizar os processos de análise de dados">
+                                Melhorar/otimizar os processos de análise de dados
+                            </option>
+                            <option value="Integrar meus sistemas para utilizar dados">
+                                Integrar meus sistemas para utilizar dados
+                            </option>
+                            <option value="Transformação digital/iniciar o uso de dados">
+                                Transformação digital/iniciar o uso de dados
+                            </option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <label for="principal_objetivo">Principal objetivo</label>
+                    </div>
+
+                    <!-- UTMS -->
+                    <div style="
+                                visibility: hidden;
+                                pointer-events: none;
+                                width: 0;
+                                height: 0;
+                                position: absolute;
+                                top: -9999px;
+                                left: -9999px;
+                                z-index: -1;
+                            ">
+                        <input type="text" id="utm_source" name="utm_source" value="" />
+                        <input type="text" id="utm_medium" name="utm_medium" value="" />
+                        <input type="text" id="utm_campaign" name="utm_campaign" value="" />
+                        <input type="text" id="utm_term" name="utm_term" value="" />
+                        <input type="text" id="utm_content" name="utm_content" value="" />
+                        <input type="text" id="url_pagina" name="url_pagina" value="" />
+                    </div>
+
+                    <button type="submit" id="button-submit" class="span-2">
+                        Falar com um especialista
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="ia">
+        <div class="ia__container container">
+            <h2 class="section-title center decoration">
+                Aplique inteligência digital para transformar resultados no
+                seu segmento
+            </h2>
+
+            <div class="gridish">
+                <article class="ia__card card01">
+                    <main>
+                        <h3>Varejo</h3>
+                        <p>
+                            Inteligência e automação que geram mais vendas e
+                            mais receitas.
+                        </p>
+                        <a href="#sdp-retail" class="btn btn--outlined">VER MAIS</a>
+                    </main>
+                </article>
+
+                <article class="ia__card card02">
+                    <main>
+                        <h3>Serviços Financeiros</h3>
+                        <p>
+                            Inteligência artificial que coloca sua empresa
+                            no topo do mercado.
+                        </p>
+                        <a href="#sdp-financial" class="btn btn--outlined">VER MAIS</a>
+                    </main>
+                </article>
+
+                <article class="ia__card card03">
+                    <main>
+                        <h3>Clínicas e Hospitais</h3>
+                        <p>
+                            Relatórios exatos para aumentar a eficiência
+                            operacional na área da saúde.
+                        </p>
+                        <a href="#sdp-health" class="btn btn--outlined">VER MAIS</a>
+                    </main>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-slider-section" id="sdp-retail">
+        <div class="container">
+            <div class="image"></div>
+
+            <div class="content">
+                <span class="custom-spam">VAREJO</span>
+                <h2 class="section-title">
+                    Multiplique suas vendas e automatize processos com o SDP
+                    Retail
+                </h2>
+                <p>
+                    Tome as melhores decisões com base em dados e tenha
+                    grandes insights a partir de dashboards analíticos.
+                </p>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <article class="swiper-slide slider-card">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_engine.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>Ingestão de dados</h3>
+                            <p>
+                                Aproveite de números de qualquer fonte:
+                                sistema legado, webservices, bancos de dados
+                                e APIs diversas.
+                            </p>
+                        </article>
+
+                        <article class="swiper-slide slider-card">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_funil.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>Dados centralizados</h3>
+                            <p>
+                                Todas as informações e números do seu
+                                negócio em um único lugar, formando um Data
+                                Lake.
+                            </p>
+                        </article>
+
+                        <article class="swiper-slide slider-card">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_process.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>Automação de processos</h3>
+                            <p>
+                                Integre APIs, bancos de dados, arquivos e
+                                webservices para automatizar ações e obter
+                                maior eficiência nos processos.
+                            </p>
+                        </article>
+
+                        <article class="swiper-slide slider-card">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_bulb.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>Insights para vendas</h3>
+                            <p>
+                                Dashboards ágeis nos canais omnichannel para
+                                ter mais agilidade no acesso à informação.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <a href="#hero" class="btn">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="financial" id="sdp-financial">
+        <div class="container financial__container">
+            <span class="custom-spam center">MERCADO FINANCEIRO</span>
+            <h2 class="section-title center">
+                O SDP Financial traz Inteligência Artificial enriquecida por
+                grandes especialistas em finanças para as melhores
+                transações
+            </h2>
+            <p>
+                Integra serviços financeiros, dados e automação de processos
+                para o desenvolvimento de modelagem matemática e execução de
+                rotinas do mercado.
+            </p>
+
+            <ul>
+                <li>
+                    <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_round-trade.svg"
+                        aria-hidden="true" loading="lazy" alt="" />
+                    <h3>
+                        Trade com dados <br />
+                        alternativos
+                    </h3>
+                    <p>
+                        Desenvolvimento de teses de investimento para criar
+                        estratégias legitimamente geradoras de alpha.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_round-check.svg"
+                        aria-hidden="true" loading="lazy" alt="" />
+                    <h3>
+                        Equity <br />
+                        Research
+                    </h3>
+                    <p>
+                        Precificação de Alocação Privada baseada em modelos
+                        altamente complexos e com alta carga de demanda
+                        intelectual.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_round-lupa.svg"
+                        aria-hidden="true" loading="lazy" alt="" />
+                    <h3>
+                        Análise <br />
+                        de Crédito
+                    </h3>
+                    <p>
+                        Automatização da análise de créditos e
+                        reestruturação de dívida e dos processos de emissão
+                        e escrituração.
+                    </p>
+                </li>
+
+                <li>
+                    <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_round-dash.svg"
+                        aria-hidden="true" loading="lazy" alt="" />
+                    <h3>
+                        Precificação <br />
+                        de Renda Fixa
+                    </h3>
+                    <p>
+                        Acompanhe a velocidade do mercado e veja as dívidas
+                        em tempo real de maneira simples.
+                    </p>
+                </li>
+            </ul>
+
+            <a href="#hero" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section class="custom-slider-section" id="sdp-health">
+        <div class="container">
+            <div class="image second"></div>
+
+            <div class="content">
+                <span class="custom-spam">CLÍNICAS E HOSPITAIS</span>
+                <h2 class="section-title large">
+                    Otimize processos e torne clínicas, laboratórios e
+                    hospitais mais lucrativos com o SDP Health
+                </h2>
+                <p>
+                    Conte com uma plataforma inteligente de ponta a ponta,
+                    integrada e entre nuvens que acelera jornadas orientadas
+                    por dados na área da saúde.
+                </p>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <article class="swiper-slide slider-card light">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_person.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>
+                                Compatível com <br />
+                                a LGPD e GDPR
+                            </h3>
+                            <p>
+                                Fique tranquilo e deixe a privacidade dos
+                                clientes e pacientes com a gente.
+                            </p>
+                        </article>
+
+                        <article class="swiper-slide slider-card light">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_shield.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>
+                                Automatização <br />
+                                intuitiva
+                            </h3>
+                            <p>
+                                Interface plug and play com dashboards e
+                                relatórios sem precisar de especialistas.
+                            </p>
+                        </article>
+
+                        <article class="swiper-slide slider-card light">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_lupalove.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>
+                                Saúde e finanças <br />
+                                em união
+                            </h3>
+                            <p>
+                                Entenda os resultados do negócio com dados
+                                clínicos e financeiros em um só lugar.
+                            </p>
+                        </article>
+
+                        <article class="swiper-slide slider-card light">
+                            <header>
+                                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-icon_engine-blue.svg"
+                                    alt="" aria-hidden="true" laoding="lazy" />
+                            </header>
+
+                            <h3>
+                                Integração <br />
+                                de dados
+                            </h3>
+                            <p>
+                                Todos os dados de fornecedores e programas
+                                de saúde de um jeito fácil de usar.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <a href="#hero" class="btn">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="revo">
+        <div class="container revo__container">
+            <div class="content">
+                <h2 class="section-title decoration decoration--blue">
+                    Os dados vão <strong>revolucionar</strong> o seu negócio
+                </h2>
+                <p>
+                    A Semantix é referência em Big Data, Analytics,
+                    Inteligência Artificial e Machine Learning e oferece
+                    soluções inovadoras em transformação digital.
+                </p>
+                <a href="#hero" class="btn">FALE COM UM ESPECIALISTA</a>
+            </div>
+
+            <div class="image">
+                <img src="https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-revo-img.png"
+                    aria-hidden="true" loading="lazy" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>Semantix 2022 &copy; Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+
+    <!-- Swiper code -->
+    <script>
+        const swiper = new Swiper(".swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            simulateTouch: true,
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- <script src="app.js"></script> -->
+    <script>
+
+        const fieldNome = document.querySelector("input[id='firstname']");
+        const fieldEmail = document.querySelector("input[id='email']");
+        const fieldPhone = document.querySelector("input[id='phone']");
+        const fieldEmpresa = document.querySelector("input[id='company']");
+        const fieldCargo = document.querySelector("select[id='jobtitle']");
+        const fieldFuncionarios = document.querySelector(
+            "select[id='numero_funcionarios_empresa_bw']"
+        );
+        const fieldPais = document.querySelector("select[id='country']");
+        const fieldSegmento = document.querySelector("select[id='segment']");
+        const fieldObjetivo = document.querySelector("select[id='principal_objetivo']");
+        const buttonSubmit = document.querySelector("button[id='button-submit']");
+
+        buttonSubmit.addEventListener("click", (e) => {
+            if (fieldNome.value.trim() === "") {
+                showPopUpValidation(e, fieldNome, "Informe seu nome");
+            } else if (!validacaoEmail(fieldEmail.value)) {
+                showPopUpValidation(e, fieldEmail, "Informe seu e-mail");
+            } else if (!emailCorporativo(fieldEmail.value)) {
+                showPopUpValidation(e, fieldEmail, "Informe um e-mail corporativo");
+            } else if (fieldPhone.value.trim() === "" || fieldPhone.value.length < 15) {
+                showPopUpValidation(e, fieldPhone, "Informe seu telefone");
+            } else if (fieldEmpresa.value.trim() === "") {
+                showPopUpValidation(e, fieldEmpresa, "Informe sua empresa");
+            } else if (fieldCargo.value.trim() === "") {
+                showPopUpValidation(e, fieldCargo, "Informe seu cargo");
+            } else if (fieldFuncionarios.value == "") {
+                showPopUpValidation(e, fieldFuncionarios, "Informe o número de funcionários da empresa");
+            } else if (fieldPais.value.trim() == "") {
+                showPopUpValidation(e, fieldPais, "Informe sua região");
+            } else if (fieldSegmento.value.trim() == "") {
+                showPopUpValidation(e, fieldSegmento, "Informe seu segmento");
+            } else if (fieldObjetivo.value == "") {
+                showPopUpValidation(e, fieldObjetivo, "Informe o seu principal objetivo");
+            } else {
+                return true;
+            }
+            return false;
+        });
+
+        // Swal fire popup
+        function showPopUpValidation(event, field, message) {
+            Swal.fire({
+                icon: "warning",
+                text: message,
+                timer: 20000,
+                onAfterClose: () => {
+                    field.focus();
+                },
+            });
+
+            event.preventDefault();
+        }
+
+        //Email validations
+        function validacaoEmail(email) {
+            var verifica =
+                /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return verifica.test(String(email).toLowerCase());
+        }
+
+        function emailCorporativo(email) {
+            const invalidDomains = [
+                "@gmail.",
+                "@yahoo.",
+                "@hotmail.",
+                "@live.",
+                "@aol.",
+                "@outlook.",
+                "@terra.",
+                "@bol.",
+                "@uol.",
+            ];
+
+            for (let i = 0; i < invalidDomains.length; i++) {
+                const domain = invalidDomains[i];
+                if (email.indexOf(domain) != -1) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        // url_pagina
+        setTimeout(function () {
+            document.querySelector("input[name='url_pagina']").value =
+                location.protocol + "//" + location.host + location.pathname;
+        }, 2000);
+
+        // Query Form
+        const queryForm = function (settings) {
+            const reset = settings && settings.reset ? settings.reset : false;
+            const self = window.location.toString();
+            const querystring = self.split("?");
+            if (querystring.length > 1) {
+                const pairs = querystring[1].split("&");
+                for (i in pairs) {
+                    var keyval = pairs[i].split("=");
+                    if (reset || sessionStorage.getItem(keyval[0]) === null) {
+                        sessionStorage.setItem(keyval[0], decodeURIComponent(keyval[1]));
+                    }
+                }
+            }
+            const hiddenFields = document.querySelectorAll(
+                "input[type=hidden], input[type=text]"
+            );
+            for (let i = 0; i < hiddenFields.length; i++) {
+                const param = sessionStorage.getItem(hiddenFields[i].name);
+                if (param)
+                    document.getElementsByName(hiddenFields[i].name)[0].value = param;
+            }
+        };
+
+        // ------------------------- Phone Mask -------------------------
+        fieldPhone.addEventListener("input", handlePhoneInput, false);
+
+        function handlePhoneInput(e) {
+            e.target.value = phoneMask(e.target.value);
+        }
+
+        function phoneMask(phone) {
+            return phone
+                .replace(/\D/g, "")
+                .replace(/^(\d)/, "($1")
+                .replace(/^(\(\d{2})(\d)/, "$1) $2")
+                .replace(/(\d{5})(\d{1,4})/, "$1-$2")
+                .replace(/(-\d{4})\d+?$/, "$1");
+        }
+
+        setTimeout(() => {
+            queryForm();
+        }, 2000);
+    </script>
+
+    {{standard_footer_includes}}
+
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21915545.js"></script>
+        <!-- End of HubSpot Embed Code -->
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+.tkp {
+    background-color: var(--clr-blue-dark);
+    color: var(--clr-white);
+    padding-block: var(--spacing);
+    display: grid;
+    position: relative;
+    min-height: 100vh;
+
+    background-image: linear-gradient(
+        -135deg,
+        var(--clr-purple) -50%,
+        var(--clr-blue-dark)
+    );
+
+    .content {
+        z-index: 9999;
+        > img {
+            margin-bottom: clamp(3.5rem, 3.5vw, 6rem);
+        }
+
+        h1 {
+            max-width: 25ch;
+            line-height: 1.2;
+            font-size: clamp(2rem, 3.5vw, 2.5rem);
+            margin-bottom: 1.5rem;
+
+            strong {
+                color: var(--clr-blue-light);
+            }
+        }
+
+        > div {
+            margin-block: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+                font-weight: 700;
+                font-size: 1.25rem;
+            }
+        }
+
+        p {
+            font-size: 1.125rem;
+            max-width: 45ch;
+        }
+
+        a {
+            margin-top: 3rem;
+            padding-inline: 3rem;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        background-image: url("https://21915545.fs1.hubspotusercontent-na1.net/hubfs/21915545/%5BBowe%5D%20Landing%20Pages/semantix-sdp/semantix_sdp-hero-banner.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-x: 100%;
+
+        &::after {
+            display: none;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1.25fr 1fr;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        background-position-x: 75%;
+    }
+
+    @media (min-width: 2000px) {
+        background-position-x: 68%;
+    }
+}

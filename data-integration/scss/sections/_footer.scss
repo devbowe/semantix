@@ -1,0 +1,11 @@
+.footer {
+    background-color: var(--clr-blue-dark);
+
+    &__container {
+        display: grid;
+        place-items: center;
+        font-size: 0.85rem;
+        color: var(--clr-white);
+        padding-block: 1.25rem;
+    }
+}
